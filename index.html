@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8"  />
+        <title>Javascript</title>
+         <script charset="utf-8" src="alert.js"></script>
+    </head>
+    <body onload="timer()" defer>
+       <input type="button" name="b" value="press me" onclick="buttonClick (this)" />
+       <script async>timer();</script>
+       <span onmouseover="count(this)">
+           На этот текст наведен курсор 0 раз.
+       </span>
+       <select name="select" id="s" onclick="buttonClick (this)">
+           <option value="some sel">some sel</option>
+           <option value="other sel">other sel</option>
+       </select>
+       <form action="" method="post" name="lesson" id="lesson">
+          <label for="firstName">Имя:</label>
+           <input type="text" name="firstName" placeholder="Имя" id="firstName" /> <br/>
+          <label for="RePassword">Пароль:</label>
+           <input type="password" name="RePassword" placeholder="Пароль" id="RePassword" /> <br/>
+           <label for="email">E-mail:</label>
+           <input type="text" name="email" placeholder="E-mail:" id="email" /> <br/>
+          <span>Пол:</span>
+          <input type="radio" name="state" id="stateM" value="male"/>
+          <label for="stateM">Мужской</label>
+          <input type="radio" name="state" id="stateF" value="female"/>
+          <label for="stateF">Женский</label>
+          <input type="button" name="submit" value="Отправить" onclick="valid(document.getElementById('lesson'))">
+       </form>
+       Вы на этом сайте <span id="count"> -1 секунд.</span>
+       <br>
+       <span id="dateCur">Текущая дата: </span> 
+       <br>
+       <span id="dateFalse">Случайная дата: </span> 
+    </body>
+</html>
